@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      margin: 20px;
+    }
+
+    th, td {
+      border: 1px solid #000;
+      width: 100px;
+      height: 100px;
+      padding: 5px;
+      vertical-align: top;
+      text-align: left;
+    }
+
+    .helper, .helper td {
+      color:transparent;
+      border: transparent;
+    }
+
+    .r1c4 {
+      text-align: center;
+      vertical-align: middle;
+      font-family: 'Arial', sans-serif; 
+      color: green; 
+    }
+
+    .r5c3 {
+      text-align: center;
+      vertical-align: middle;
+      font-family: 'Georgia', serif;
+      color: darkblue;
+    }
+
+    .r6c4 {
+      text-align: center;
+      vertical-align: middle;
+      font-family: 'Courier New', monospace;
+      color: purple;
+    }
+
+    .r5c5 {
+      text-align: center;
+      vertical-align: middle;
+      font-family: 'Verdana', sans-serif;
+      color: darkgreen;
+    }
+
+  </style>
+</head>
+<body>
+
+  <table>
+    <tr>
+      <td rowspan="2" colspan="2" style="text-align: center; vertical-align: middle;">
+        <img src="cat.png" alt="Picture of Cat" width="100px">
+      </td>
+      <td style="background-color: lightblue;">r1c3</td>
+      <td rowspan="2" class="r1c4">
+        I am capable of achieving great things
+      </td>
+      <td rowspan="2" colspan="2">r1c5</td>
+      <td class="helper">x</td>
+    </tr>
+
+    <tr>
+      <td rowspan="2">
+        <a href="mailto:anushree.tyagi2023@vitstudent.ac.in">r2c3</a>
+      </td>
+      <td class="helper">x</td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <a href="home.html">r3c1</a>
+      </td>
+      <td colspan="2" style="text-align: center; vertical-align: middle;">
+        <a href="https://s3.envato.com/files/508776555/preview.jpg">
+          <img src="dog.jpg" alt="Picture of Dog" width="100px">
+        </a>
+      </td>
+      <td>r3c6</td>
+      <td class="helper">x</td>
+    </tr>
+
+    <tr>
+      <td style="background-color: lightpink;">r4c1</td>
+      <td colspan="2" style="background-color: lightsalmon;">r4c2</td>
+      <td rowspan="2">r4c4</td>
+      <td colspan="2">r4c5</td>
+      <td class="helper">x</td>
+    </tr>
+
+    <tr>
+      <td rowspan="2" colspan="2"  style="background-color: lightgreen;">r5c1</td>
+      <td rowspan="2" class="r5c3">
+        Every day is a new opportunity for growth
+      </td>
+      <td rowspan="2" colspan="2" class="r5c3">
+        I choose happiness and peace in every moment
+      </td>
+      <td class="helper">x</td>
+    </tr>
+
+    <tr>
+      <td class="r6c4">
+        I am worthy of love and respect
+      </td>
+      <td class="helper">x</td>
+    </tr>
+
+    <tr class="helper">
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+  </table>
+
+  <div style="background-color: #e16d6d; color: #fff; text-align: center; padding: 20px; margin-top: 20px;">
+    <p style="margin: 0;">&copy; 2024 Anushree Tyagi (23BCB0108). All rights reserved.</p>
+  </div>
+
+</body>
+</html>
