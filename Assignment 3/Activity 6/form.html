@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Employee Survey</title>
+    <link rel="stylesheet" href="form_styles.css">
+</head>
+<body>
+    <form action="anushree.php">
+        <h2 class="form-title">Employee Survey</h2>
+
+        <label for="name">Name</label>
+        <input type="text" name="myName" id="name" placeholder="Enter your name" required>
+
+        <label for="role">Role</label>
+        <input type="text" name="myRole" id="role" placeholder="Enter your role" required>
+
+        <label for="email">Email</label>
+        <input type="email" name="myEmail" id="email" placeholder="Enter your email" required>
+
+        <label for="date">Date of Joining</label>
+        <input type="date" name="myDate" id="date" required>
+
+        <label for="bonus">Bonus</label>
+        <input type="number" name="myBonus" id="bonus" placeholder="Enter bonus amount" required>
+
+        <div class="checkbox-group">
+            <label for="eligibility">Are you eligible for bonus?</label>
+            <input type="checkbox" name="myEligibility" id="eligibility" checked>
+        </div>
+
+        <fieldset>
+            <legend>Gender</legend>
+            <div class="radio-group">
+                <label><input type="radio" name="myGender" value="male">Male</label>
+                <label><input type="radio" name="myGender" value="female">Female</label>
+                <label><input type="radio" name="myGender" value="other">Other</label>
+            </div>
+        </fieldset>
+
+        <label for="city">City</label>
+        <select name="city" id="city">
+            <option value="chennai">Chennai</option>
+            <option value="mumbai">Mumbai</option>
+            <option value="others">Others</option>
+        </select>
+
+        <div id="otherCitySection">
+            <label for="other-city">If Others, please specify</label>
+            <input type="text" id="other-city" name="otherCity" placeholder="Enter city name">
+        </div>
+
+        <label for="goal">Write about your goal</label>
+        <textarea name="myText" id="goal" cols="30" rows="5" placeholder="Enter your goal"></textarea>
+
+        <fieldset>
+            <legend>Car Information</legend>
+            <div class="radio-group">
+                <label><input type="radio" name="myCar" value="yes">Car given</label>
+                <label><input type="radio" name="myCar" value="no">Not Given</label>
+            </div>
+
+            <label for="car">Select car if given</label>
+            <select name="myCar" id="car">
+                <option value="ind">Indica</option>
+                <option value="swf" selected>Swift</option>
+                <option value="others">Others</option>
+            </select>
+
+            <label for="carName">If Others, enter car name</label>
+            <input type="text" id="carName" name="carName" placeholder="Enter car name">
+        </fieldset>
+
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fatherName">Father's Name</label>
+            <input type="text" name="fname" id="fatherName" required>
+
+            <label for="motherName">Mother's Name</label>
+            <input type="text" name="Mname" id="motherName" required>
+
+            <label for="address">Address</label>
+            <input type="text" name="address" id="address" required>
+
+            <label for="contactNumber">Contact Number</label>
+            <input type="number" name="number" id="contactNumber" required>
+        </fieldset>
+
+        <div class="form-actions">
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+    </form>
+</body>
+</html>

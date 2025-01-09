@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orange-Themed Web Page</title>
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #fff4e6;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(90deg, #ff8c42, #ff5722);
+            color: white;
+            text-align: center;
+            padding: 2em 0;
+        }
+
+        header h2 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header h3 {
+            margin: 0.5em 0 0;
+            font-weight: 300;
+        }
+
+        nav {
+            background-color: #ff6f3d;
+            padding: 1em 0;
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: white;
+            font-weight: 500;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #e65c2f;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2em;
+            margin: 2em;
+            max-width: 1200px;
+            margin: 2em auto;
+        }
+
+        .content, aside {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .content {
+            flex: 3;
+            background-color: white;
+            padding: 2em;
+        }
+
+        aside {
+            flex: 1;
+            background-color: #ffe9d3;
+            padding: 1.5em;
+        }
+
+        aside h3, .content h2 {
+            color: #ff5722;
+        }
+
+        .blog img, .blog video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 1em;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            margin: 2em auto;
+            max-width: 500px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 1em;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        .contact-form input::placeholder, .contact-form textarea::placeholder {
+            color: #999;
+            font-style: italic;
+        }
+
+        .contact-form button {
+            background: linear-gradient(90deg, #ff8c42, #ff5722);
+            color: white;
+            border: none;
+            padding: 1em;
+            font-size: 1em;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .contact-form button:hover {
+            background: linear-gradient(90deg, #ff5722, #ff8c42);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1.5em 0;
+        }
+
+        footer h2 {
+            margin-bottom: 1em;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 1em;
+            }
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h2>Welcome to My Web Page</h2>
+        <h3>- Anushree Tyagi</h3>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#navigation">Navigation</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <div class="container">
+        <div class="content" id="home">
+            <h2>Home Page</h2>
+            <h3 style="color: #ff5722; text-align: center;">Welcome to Muscle Engineer Gym!</h3>
+            <p>Transform Your Fitness Journey with Us</p>
+            <p><strong>About Muscle Engineer Gym</strong></p>
+            <p>At Muscle Engineer Gym, we believe fitness is more than just a workout—it's a lifestyle...</p>
+        </div>
+
+        <aside>
+            <h3>Quick Tips</h3>
+            <ul>
+                <li>Stay hydrated during workouts.</li>
+                <li>Consistency is key to success.</li>
+                <li>Warm up before exercising.</li>
+                <li>Rest days are just as important!</li>
+            </ul>
+            <h3>Special Announcement</h3>
+            <p>Join our new Yoga and Pilates classes starting next month!</p>
+        </aside>
+    </div>
+
+    <div class="container">
+        <div class="content" id="navigation">
+            <h2>Navigation Page</h2>
+            <ul>
+                <li><a href="activity1A.html">Activity 1A</a></li>
+                <li><a href="activity1B.html">Activity 1B</a></li>
+                <li><a href="activity1C.html">Activity 1C</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="content blog" id="blog">
+            <h2>Blog Page</h2>
+            <p>Here are some photos, videos, and hyperlinks:</p>
+            <img src="gymphoto.jpg" alt="Sample Photo" width=500px>
+            <img src="gymphoto2.png" alt="Gym Photo 2" width=307px>
+            <video src="gymvideo.mp4" type="video/mp4" controls>
+                Your browser does not support the video tag.
+            </video>
+            <p>Check out this <a href="https://example.com">link</a> for more information.</p>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </footer>
+</body>
+
+</html>

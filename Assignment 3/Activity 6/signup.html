@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <form action="login.html" method="post">
+        <center>
+            <h2>Sign Up</h2>
+            <p>Please fill in this form to create an account!</p>
+        </center>
+        <br>
+        <div>
+            <strong>Name</strong>
+            <input type="text" name="username" placeholder="Enter name" required>
+        </div>
+        <br>
+        <div>
+            <strong>Email</strong>
+            <input type="email" name="email" placeholder="Enter email" required>
+        </div>
+        <br>
+        <div class="password-container">
+            <div class="password-label">
+                <strong>Password</strong>
+            </div>
+            <input type="password" name="password" placeholder="Enter password" id="password" required>
+            <i class="far fa-eye" id="togglePassword1"></i>
+        </div>
+        <br>
+        <div class="password-container">
+            <div class="password-label">
+                <strong>Re-enter Password</strong>
+            </div>
+            <input type="password" name="confirmPassword" placeholder="Re-enter password" id="confirmPassword" required>
+            <i class="far fa-eye" id="togglePassword2"></i>
+        </div>
+        <br>
+        <div>
+            <input type="checkbox" name="terms" required>
+            <label for="terms">I accept all terms and policies</label>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Sign Up">
+        </div>
+    </form>
+
+    <script src="password.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            addToggleButton("togglePassword1", "password");
+            addToggleButton("togglePassword2", "confirmPassword");
+        });
+
+        const form = document.querySelector("form");
+        const password = document.getElementById("password");
+        const confirmPassword = document.getElementById("confirmPassword");
+
+        form.addEventListener("submit", (e) => {
+            if (password.value !== confirmPassword.value) {
+                e.preventDefault();
+                alert("Passwords do not match. Please re-enter the passwords.");
+            }
+        });
+    </script>
+</body>
+</html>
